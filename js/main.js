@@ -1,5 +1,5 @@
 // ==========================================================================
-// PROVENTUS — main.js
+// PROVENTUS — main.js v2
 // ==========================================================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,170 +9,172 @@ document.addEventListener("DOMContentLoaded", () => {
   initFaqAccordion();
   initContactForm();
   initActiveNavLink();
+  initVideoTabs();
+  initHeroVideoPlay();
 });
 
-/* -------------------- Menu mobile -------------------- */
+/* ---- Menu mobile ---- */
 function initMobileMenu() {
   const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".main-nav");
+  const nav    = document.querySelector(".main-nav");
   const overlay = document.querySelector(".nav-overlay");
   if (!toggle || !nav) return;
 
-  function closeMenu() {
+  const close = () => {
     nav.classList.remove("open");
     toggle.classList.remove("is-open");
-    overlay && overlay.classList.remove("show");
+    overlay?.classList.remove("show");
     document.body.style.overflow = "";
-  }
-
-  function openMenu() {
+    toggle.setAttribute("aria-expanded", "false");
+  };
+  const open = () => {
     nav.classList.add("open");
     toggle.classList.add("is-open");
-    overlay && overlay.classList.add("show");
+    overlay?.classList.add("show");
     document.body.style.overflow = "hidden";
-  }
+    toggle.setAttribute("aria-expanded", "true");
+  };
 
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.contains("open");
-    isOpen ? closeMenu() : openMenu();
-  });
-
-  overlay && overlay.addEventListener("click", closeMenu);
-
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", closeMenu);
-  });
-
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMenu();
-  });
+  toggle.addEventListener("click", () =>
+    nav.classList.contains("open") ? close() : open()
+  );
+  overlay?.addEventListener("click", close);
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", close));
+  window.addEventListener("keydown", e => e.key === "Escape" && close());
 }
 
-/* -------------------- Scroll reveal -------------------- */
+/* ---- Scroll reveal ---- */
 function initScrollReveal() {
   const items = document.querySelectorAll(".reveal");
   if (!items.length) return;
 
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduceMotion) {
-    items.forEach((el) => el.classList.add("in-view"));
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    items.forEach(el => el.classList.add("in-view"));
     return;
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+  const obs = new IntersectionObserver(
+    entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in-view"); obs.unobserve(e.target); }
+    }),
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
   );
-
-  items.forEach((el) => observer.observe(el));
+  items.forEach(el => obs.observe(el));
 }
 
-/* -------------------- Header dinâmico -------------------- */
+/* ---- Header shadow on scroll ---- */
 function initHeaderState() {
-  const header = document.querySelector(".site-header");
-  if (!header) return;
-
-  function update() {
-    if (window.scrollY > 24) {
-      header.style.boxShadow = "0 8px 24px rgba(0,0,0,0.35)";
-    } else {
-      header.style.boxShadow = "none";
-    }
-  }
+  const h = document.querySelector(".site-header");
+  if (!h) return;
+  const update = () => {
+    h.style.boxShadow = window.scrollY > 24 ? "0 8px 24px rgba(0,0,0,0.4)" : "none";
+  };
   update();
   window.addEventListener("scroll", update, { passive: true });
 }
 
-/* -------------------- Marca link de navegação ativo -------------------- */
+/* ---- Marca link ativo ---- */
 function initActiveNavLink() {
   const path = window.location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".main-nav a").forEach((link) => {
+  document.querySelectorAll(".main-nav a").forEach(link => {
     const href = link.getAttribute("href");
-    if (href === path || (path === "" && href === "index.html")) {
+    if (href === path || (path === "" && href === "index.html"))
       link.classList.add("active");
-    }
   });
 }
 
-/* -------------------- FAQ accordion -------------------- */
+/* ---- FAQ accordion ---- */
 function initFaqAccordion() {
-  const items = document.querySelectorAll(".faq-item");
-  if (!items.length) return;
-
-  items.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-
-    question.addEventListener("click", () => {
-      const isOpen = item.classList.contains("open");
-
-      items.forEach((other) => {
-        other.classList.remove("open");
-        other.querySelector(".faq-answer").style.maxHeight = null;
+  document.querySelectorAll(".faq-item").forEach(item => {
+    const q = item.querySelector(".faq-question");
+    const a = item.querySelector(".faq-answer");
+    q?.addEventListener("click", () => {
+      const open = item.classList.contains("open");
+      document.querySelectorAll(".faq-item").forEach(i => {
+        i.classList.remove("open");
+        const ans = i.querySelector(".faq-answer");
+        if (ans) ans.style.maxHeight = null;
       });
-
-      if (!isOpen) {
+      if (!open) {
         item.classList.add("open");
-        answer.style.maxHeight = answer.scrollHeight + "px";
+        if (a) a.style.maxHeight = a.scrollHeight + "px";
       }
+    });
+    q?.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); q.click(); }
     });
   });
 }
 
-/* -------------------- Formulário de contato -------------------- */
+/* ---- Formulário de contato ---- */
 function initContactForm() {
   const form = document.querySelector("#contact-form");
   if (!form) return;
-
   const status = form.querySelector(".form-status");
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", e => {
     e.preventDefault();
-
-    const name = form.querySelector("#name");
-    const email = form.querySelector("#email");
+    const name    = form.querySelector("#name");
+    const email   = form.querySelector("#email");
     const message = form.querySelector("#message");
     let valid = true;
 
-    [name, email, message].forEach((field) => {
-      if (field && !field.value.trim()) {
-        field.style.borderColor = "#e0282c";
-        valid = false;
-      } else if (field) {
-        field.style.borderColor = "";
-      }
+    [name, email, message].forEach(f => {
+      if (f && !f.value.trim()) { f.style.borderColor = "#e0282c"; valid = false; }
+      else if (f)               { f.style.borderColor = ""; }
     });
-
-    if (email && email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-      email.style.borderColor = "#e0282c";
-      valid = false;
+    if (email?.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      email.style.borderColor = "#e0282c"; valid = false;
     }
 
     if (!valid) {
-      status.textContent = "Preencha os campos obrigatórios corretamente.";
-      status.className = "form-status error";
+      if (status) { status.textContent = "Preencha os campos obrigatórios."; status.className = "form-status error"; }
       return;
     }
 
-    status.textContent = "Enviando mensagem...";
-    status.className = "form-status";
+    if (status) { status.textContent = "Enviando…"; status.className = "form-status"; }
 
-    // Simulação de envio — substituir por integração real (endpoint próprio, EmailJS, Formspree etc.)
     setTimeout(() => {
-      status.textContent = "Mensagem enviada! Em breve nossa equipe entrará em contato.";
-      status.className = "form-status success";
-      form.reset();
-
-      if (typeof dataLayer !== "undefined") {
-        dataLayer.push({ event: "formulario_enviado", form_name: "contato_proventus" });
+      if (status) {
+        status.textContent = "Mensagem enviada! Nossa equipe entrará em contato em breve.";
+        status.className = "form-status success";
       }
+      form.reset();
     }, 900);
+  });
+}
+
+/* ---- Tabs de vídeos Drive ---- */
+function initVideoTabs() {
+  const tabs    = document.querySelectorAll(".video-tab");
+  const panels  = document.querySelectorAll(".video-panel");
+  if (!tabs.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      panels.forEach(p => p.hidden = true);
+      tab.classList.add("active");
+      const target = document.getElementById(tab.dataset.target);
+      if (target) target.hidden = false;
+    });
+  });
+}
+
+/* ---- Play de vídeo Drive (substituir thumb por iframe) ---- */
+function initHeroVideoPlay() {
+  document.querySelectorAll(".video-drive-overlay").forEach(overlay => {
+    overlay.addEventListener("click", () => {
+      const wrap  = overlay.closest(".video-drive-frame");
+      const src   = overlay.dataset.src;
+      if (!wrap || !src) return;
+
+      const iframe = document.createElement("iframe");
+      iframe.src = src + "?autoplay=1";
+      iframe.allow = "autoplay; fullscreen";
+      iframe.style.cssText = "width:100%;height:100%;border:0;position:absolute;inset:0;";
+      wrap.innerHTML = "";
+      wrap.appendChild(iframe);
+    });
   });
 }
