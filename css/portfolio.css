@@ -1,0 +1,356 @@
+/* ==========================================================================
+   PORTFÓLIO — Estilos específicos
+   Carrosséis por categoria + hover overlay com info do evento
+   ========================================================================== */
+
+/* ---------- Hero da página ---------- */
+.portfolio-hero {
+  padding: 180px 0 80px;
+  border-bottom: 1px solid var(--line-soft);
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Âncoras de navegação rápida (índice de categorias) ---------- */
+.portfolio-nav {
+  position: sticky;
+  top: 84px;
+  z-index: 50;
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line-soft);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.portfolio-nav::-webkit-scrollbar { display: none; }
+
+.portfolio-nav-inner {
+  display: flex;
+  gap: 0;
+  min-width: max-content;
+  padding: 0 var(--gutter);
+}
+
+.portfolio-nav-link {
+  font-family: var(--font-display);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+  padding: 18px 22px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.portfolio-nav-link:hover,
+.portfolio-nav-link.is-active {
+  color: var(--white);
+  border-bottom-color: var(--red);
+}
+.portfolio-nav-link .nav-num {
+  color: var(--red);
+  font-size: 10px;
+}
+
+/* ---------- Seção de categoria ---------- */
+.portfolio-category {
+  padding: 96px 0 80px;
+  border-top: 1px solid var(--line-soft);
+  position: relative;
+  z-index: 1;
+}
+.portfolio-category:nth-child(even) {
+  background: var(--black-card);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.category-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-count {
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-dim);
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4.5vw, 58px);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.95;
+  color: var(--white);
+}
+
+.category-desc {
+  max-width: 480px;
+  color: var(--gray);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* Controles do carrossel */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--white-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease), color 0.2s var(--ease);
+  flex-shrink: 0;
+}
+.carousel-btn:hover {
+  border-color: var(--red);
+  background: var(--red);
+  color: var(--white);
+}
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.carousel-btn:disabled:hover {
+  border-color: var(--line);
+  background: transparent;
+  color: var(--white-soft);
+}
+
+.carousel-counter {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--gray);
+  min-width: 52px;
+  text-align: center;
+}
+.carousel-counter .current { color: var(--white); }
+
+/* ---------- Wrapper do carrossel ---------- */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Máscara fade nas bordas */
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 3;
+  pointer-events: none;
+}
+.carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-fade, rgba(10,10,10,0.6)), transparent);
+}
+.carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-fade, rgba(10,10,10,0.6)), transparent);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.5s var(--ease);
+  will-change: transform;
+  cursor: grab;
+  user-select: none;
+}
+.carousel-track:active { cursor: grabbing; }
+
+/* ---------- Card do carrossel ---------- */
+.carousel-card {
+  position: relative;
+  flex-shrink: 0;
+  width: clamp(260px, 30vw, 400px);
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: var(--black-card-2);
+  border: 1px solid var(--line);
+}
+
+/* Imagem */
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s var(--ease), filter 0.45s var(--ease);
+  filter: grayscale(0.25) brightness(0.78);
+}
+
+/* Overlay hover */
+.carousel-card .card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 0.97) 0%,
+    rgba(10, 10, 10, 0.72) 42%,
+    rgba(10, 10, 10, 0.15) 75%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 24px 26px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+}
+
+/* Tag de categoria no canto */
+.card-overlay .card-tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--red);
+  padding: 5px 10px;
+  line-height: 1;
+}
+
+.card-overlay .card-event-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+
+.card-overlay .card-event-desc {
+  font-size: 13px;
+  color: var(--white-soft);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.card-overlay .card-event-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-event-meta .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.card-event-meta .meta-item svg {
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+/* Estado hover: imagem zoom + overlay aparece */
+.carousel-card:hover img {
+  transform: scale(1.06);
+  filter: grayscale(0) brightness(0.65);
+}
+.carousel-card:hover .card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Versão landscape (feiras/estruturas) */
+.carousel-card.landscape {
+  aspect-ratio: 16/9;
+  width: clamp(360px, 50vw, 680px);
+}
+
+/* Versão square (equipes) */
+.carousel-card.square {
+  aspect-ratio: 1/1;
+  width: clamp(240px, 26vw, 360px);
+}
+
+/* ---------- Dots de paginação ---------- */
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 28px;
+  justify-content: center;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--line);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), width 0.25s var(--ease);
+  border: none;
+  padding: 0;
+  flex-shrink: 0;
+}
+.carousel-dot.active {
+  background: var(--red);
+  width: 20px;
+  border-radius: 3px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .portfolio-category { padding: 64px 0 56px; }
+  .category-header { flex-direction: column; align-items: flex-start; }
+  .carousel-controls { align-self: flex-end; }
+  .carousel-card { width: clamp(220px, 72vw, 320px); }
+  .carousel-card.landscape { width: clamp(280px, 85vw, 560px); aspect-ratio: 4/3; }
+  .carousel-card.square { width: clamp(200px, 65vw, 300px); }
+}
+
+/* ---------- CTA de portfólio ---------- */
+.portfolio-cta {
+  padding: 100px 0;
+  border-top: 1px solid var(--line-soft);
+  background: var(--black-card);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
