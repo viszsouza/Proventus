@@ -1,1484 +1,609 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Portfólio — Proventus Promoções</title>
-  <meta name="description"
-    content="Veja os projetos reais da Proventus: estruturas, shows, inaugurações, stands, cenografia e operações em todo o Brasil." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/pages.css" />
-  <link rel="stylesheet" href="css/portfolio.css" />
+  <meta name="description" content="Veja os projetos reais da Proventus: estruturas, shows, inaugurações, stands, cenografia e operações em todo o Brasil."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+  <link rel="stylesheet" href="css/portfolio.css"/>
 </head>
-
 <body>
-  <a href="#main" class="skip-link">Pular para o conteúdo</a>
-  <div class="truss-grid" aria-hidden="true"></div>
-  <div class="nav-overlay"></div>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div class="truss-grid" aria-hidden="true"></div>
+<div class="nav-overlay"></div>
 
-  <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="index.html" class="logo"><img src="img/LogoProventusBranca.png" alt="Proventus" width="160" /></a>
-        <nav class="main-nav" aria-label="Navegação principal">
-          <a href="index.html">Início</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="servicos.html">Serviços</a>
-          <a href="portfolio.html" class="active">Portfólio</a>
-          <a href="contato.html">Contato</a>
-        </nav>
-        <div class="header-cta">
-          <a href="tel:+5581999835246" class="btn-phone">(81) 9 9983-5246</a>
-          <a href="contato.html" class="btn btn-primary">Solicitar Orçamento <svg class="btn-arrow" width="14"
-              height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></a>
-          <button class="menu-toggle" aria-label="Abrir menu"
-            aria-expanded="false"><span></span><span></span><span></span></button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- HERO -->
-    <section class="portfolio-hero" aria-labelledby="portfolio-title">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Trilha">
-          <a href="index.html">Início</a><span class="sep" aria-hidden="true">—</span>
-          <span class="current" aria-current="page">Portfólio</span>
-        </nav>
-        <span class="eyebrow reveal">Nossos Projetos</span>
-        <h1 id="portfolio-title" class="h1 reveal reveal-delay-1" style="margin-top:18px;max-width:860px">
-          EVENTOS QUE<br />ACONTECERAM<br /><span style="color:var(--red)">DE VERDADE</span>
-        </h1>
-        <p class="lead reveal reveal-delay-2" style="margin-top:28px;max-width:600px">
-          27 anos de história construída evento a evento. Explore por categoria e veja o que a Proventus entrega — da
-          fundação da estrutura ao último promotor em campo.
-        </p>
-        <div class="reveal reveal-delay-3" style="display:flex;gap:48px;margin-top:52px;flex-wrap:wrap">
-          <div><span
-              style="font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--red);line-height:1;display:block">6</span><span
-              style="font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em">Categorias</span>
-          </div>
-          <div><span
-              style="font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--red);line-height:1;display:block">60+</span><span
-              style="font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em">Marcas
-              Atendidas</span></div>
-          <div><span
-              style="font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--red);line-height:1;display:block">27</span><span
-              style="font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em">Anos de
-              Mercado</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NAV STICKY -->
-    <nav class="portfolio-nav" aria-label="Navegar por categoria">
-      <div class="portfolio-nav-inner">
-        <a href="#estruturas" class="portfolio-nav-link"><span class="nav-num">01</span> Estruturas e Infraestrutura</a>
-        <a href="#shows" class="portfolio-nav-link"><span class="nav-num">02</span> Grandes
-          Eventos</a>
-        <a href="#corporativos" class="portfolio-nav-link"><span class="nav-num">03</span> Eventos Corporativos</a>
-        <a href="#feiras" class="portfolio-nav-link"><span class="nav-num">04</span> Feiras e Experiências de Marca</a>
-        <a href="#cenografia" class="portfolio-nav-link"><span class="nav-num">05</span> Cenografia e Ambientação</a>
-        <a href="#equipes" class="portfolio-nav-link"><span class="nav-num">06</span> Equipes e Operações</a>
-      </div>
+<header class="site-header">
+  <div class="container"><div class="header-inner">
+    <a href="index.html" class="logo"><img src="img/LogoProventusBranca.png" alt="Proventus" width="160"/></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html" class="active">Portfólio</a>
+      <a href="contato.html">Contato</a>
     </nav>
+    <div class="header-cta">
+      <a href="tel:+5581999835246" class="btn-phone">(81) 9 9983-5246</a>
+      <a href="contato.html" class="btn btn-primary">Solicitar Orçamento <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div></div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="portfolio-hero" aria-labelledby="portfolio-title">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Trilha">
+      <a href="index.html">Início</a><span class="sep" aria-hidden="true">—</span>
+      <span class="current" aria-current="page">Portfólio</span>
+    </nav>
+    <span class="eyebrow reveal">Nossos Projetos</span>
+    <h1 id="portfolio-title" class="h1 reveal reveal-delay-1" style="margin-top:18px;max-width:860px">
+      EVENTOS QUE<br/>ACONTECERAM<br/><span style="color:var(--red)">DE VERDADE</span>
+    </h1>
+    <p class="lead reveal reveal-delay-2" style="margin-top:28px;max-width:600px">
+      27 anos de história construída evento a evento. Explore por categoria e veja o que a Proventus entrega — da fundação da estrutura ao último promotor em campo.
+    </p>
+    <div class="reveal reveal-delay-3" style="display:flex;gap:48px;margin-top:52px;flex-wrap:wrap">
+      <div><span style="font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--red);line-height:1;display:block">6</span><span style="font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em">Categorias</span></div>
+      <div><span style="font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--red);line-height:1;display:block">60+</span><span style="font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em">Marcas Atendidas</span></div>
+      <div><span style="font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--red);line-height:1;display:block">27</span><span style="font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.08em">Anos de Mercado</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NAV STICKY -->
+<nav class="portfolio-nav" aria-label="Navegar por categoria">
+  <div class="portfolio-nav-inner">
+    <a href="#estruturas"   class="portfolio-nav-link"><span class="nav-num">01</span> Estruturas e Infraestrutura</a>
+    <a href="#shows"        class="portfolio-nav-link"><span class="nav-num">02</span> Shows, Festivais e Grandes Eventos</a>
+    <a href="#corporativos" class="portfolio-nav-link"><span class="nav-num">03</span> Eventos Corporativos</a>
+    <a href="#feiras"       class="portfolio-nav-link"><span class="nav-num">04</span> Feiras e Experiências de Marca</a>
+    <a href="#cenografia"   class="portfolio-nav-link"><span class="nav-num">05</span> Cenografia e Ambientação</a>
+    <a href="#equipes"      class="portfolio-nav-link"><span class="nav-num">06</span> Equipes e Operações</a>
+  </div>
+</nav>
 
 
-    <!-- ══ 01 ESTRUTURAS E INFRAESTRUTURA ══════════════════════════════════════ -->
-    <section class="portfolio-category" id="estruturas" aria-labelledby="cat-estruturas">
-      <div class="container">
-        <div class="category-header">
-          <div class="category-title-block">
-            <span class="eyebrow">01 / 06</span>
-            <h2 class="category-title" id="cat-estruturas">Estruturas &amp;<br />Infraestrutura</h2>
-            <p class="category-desc">Galpões metálicos, coberturas de grande porte, tendas, palcos, containers e toda a
-              infraestrutura física que sustenta os maiores eventos do Brasil.</p>
-          </div>
-          <div class="carousel-controls" data-carousel="c-estruturas">
-            <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg></button>
-            <span class="carousel-counter"><span class="current">1</span> / <span class="total">14</span></span>
-            <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></button>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-track" id="c-estruturas" role="list">
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1dzkeJaw0aJjiogLmqa33LWNnR_jlcLIS&sz=w900"
-                alt="Semiárido Show — estrutura" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Palco / Festival</span>
-                <h3 class="card-event-name">Semiárido Show</h3>
-                <p class="card-event-desc">Montagem de palco e infraestrutura completa do maior evento do semiárido
-                  brasileiro.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Petrolina, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=15u6X54CkYiSCBAXdDWbIDMKRzBW5KoiA&sz=w900"
-                alt="Semiárido Show 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Palco / Festival</span>
-                <h3 class="card-event-name">Semiárido Show — Vista Geral</h3>
-                <p class="card-event-desc">Vista panorâmica da estrutura e área do Semiárido Show com capacidade para
-                  milhares de pessoas.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Petrolina, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1F7IsM-PW9Sy94IlBOkLeuGr7Lz6GWAJ9&sz=w900"
-                alt="Semiárido Show 3" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Estrutura Metálica</span>
-                <h3 class="card-event-name">Semiárido Show — Palco Principal</h3>
-                <p class="card-event-desc">Palco principal com estrutura metálica, iluminação e cobertura montados pela
-                  Proventus.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Petrolina, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1HaEohLqrFYi1hqa4ads7XYnrtenIT1Za&sz=w900"
-                alt="Pedra Fundamental Vazia Garanhuns" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Cobertura</span>
-                <h3 class="card-event-name">Pedra Fundamental — Garanhuns</h3>
-                <p class="card-event-desc">Estrutura de cobertura montada antes do evento oficial de Pedra Fundamental
-                  em Garanhuns, PE.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Garanhuns, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1PQGRjk0inMuphjAphK-c0-P85d3hXshi&sz=w900"
-                alt="Pedra Fundamental Garanhuns" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Evento Público</span>
-                <h3 class="card-event-name">Pedra Fundamental — Cerimônia</h3>
-                <p class="card-event-desc">Estrutura para cerimônia oficial com autoridades governamentais em Garanhuns.
-                </p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Garanhuns, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1Fhq6yqty3Ic1BwpGX1R6cpfkIYUM9ha2&sz=w900"
-                alt="Pedra Fundamental Cheia Garanhuns" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Grande Público</span>
-                <h3 class="card-event-name">Pedra Fundamental — Lotado</h3>
-                <p class="card-event-desc">Vista da estrutura com o público presente — evento oficial do Governo de
-                  Pernambuco.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Garanhuns, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1N3-rY85BJ5n_lW1u2Ed9Q3Ikh2ZfhvYx&sz=w900"
-                alt="Pedra Fundamental Estrutura Garanhuns" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Estrutura Metálica</span>
-                <h3 class="card-event-name">Pedra Fundamental — Estrutura</h3>
-                <p class="card-event-desc">Detalhe da estrutura metálica de cobertura montada para o evento
-                  governamental.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Garanhuns, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=14JDyBB9LTazvmi0S7cdKP_3kjOg-x27E&sz=w900"
-                alt="Hospital Provisório Secretaria da Saúde" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Estrutura Hospitalar</span>
-                <h3 class="card-event-name">Hospital Provisório — Sec. Saúde PE</h3>
-                <p class="card-event-desc">Montagem de estrutura hospitalar provisória para a Secretaria de Saúde de
-                  Pernambuco.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1IY7cX7MiRsNtqvFoDTmdVbGFE22Y4GhM&sz=w900"
-                alt="Hospital Provisório Secretaria da Saúde 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Infraestrutura Pública</span>
-                <h3 class="card-event-name">Hospital Provisório — Vista Interna</h3>
-                <p class="card-event-desc">Vista interna da estrutura hospitalar provisória — projeto de alta
-                  responsabilidade e prazo crítico.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1uiGrOXFTCOmUXt9GSt0bRUImPqaFjE22&sz=w900"
-                alt="Mercado Provisório Camaragibe" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Mercado Provisório</span>
-                <h3 class="card-event-name">Mercado Provisório — Camaragibe</h3>
-                <p class="card-event-desc">Estrutura de mercado provisório para a Prefeitura de Camaragibe, PE — solução
-                  rápida e funcional.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Camaragibe, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1Bsmb4aIrAcsskPB-6fMHfOidJ8CWan-F&sz=w900"
-                alt="Porto do Itaqui" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Infraestrutura Portuária</span>
-                <h3 class="card-event-name">Porto do Itaqui</h3>
-                <p class="card-event-desc">Montagem de estrutura para evento no Porto do Itaqui, Maranhão — operação
-                  logística de alta complexidade.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Maranhão</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1G_i_knj9nlwHQgWJIVJ6s8uJqjXS6don&sz=w900"
-                alt="EMBRAPA Semiárido" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Institucional</span>
-                <h3 class="card-event-name">EMBRAPA — Semiárido</h3>
-                <p class="card-event-desc">Estrutura e ambientação para evento da EMBRAPA no semiárido brasileiro.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Semiárido, NE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1gMobUaFrXHXrWeR9fPdjW-02lwKJrb0r&sz=w900"
-                alt="Container Bohemia" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Container / Ativação</span>
-                <h3 class="card-event-name">Container BOHEMIA</h3>
-                <p class="card-event-desc">Container customizado para ativação de marca da BOHEMIA — produção e montagem
-                  completas.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Bohemia</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card landscape" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1CF5UHApRGbBfNbtuUe9PFztGfAnBiTRr&sz=w900"
-                alt="Livraria Senado Federal Bienal do Livro" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Bienal do Livro</span>
-                <h3 class="card-event-name">Livraria do Senado Federal</h3>
-                <p class="card-event-desc">Montagem da Livraria do Senado Federal na Bienal do Livro — estrutura e
-                  ambientação institucional.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Senado Federal</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-dots" data-dots="c-estruturas" role="tablist" aria-label="Paginação"></div>
+<!-- ══ 01 ESTRUTURAS E INFRAESTRUTURA ══════════════════════════════════════ -->
+<section class="portfolio-category" id="estruturas" aria-labelledby="cat-estruturas">
+  <div class="container">
+    <div class="category-header">
+      <div class="category-title-block">
+        <span class="eyebrow">01 / 06</span>
+        <h2 class="category-title" id="cat-estruturas">Estruturas &amp;<br/>Infraestrutura</h2>
+        <p class="category-desc">Galpões metálicos, coberturas de grande porte, tendas, palcos, containers e toda a infraestrutura física que sustenta os maiores eventos do Brasil.</p>
       </div>
-    </section>
-
-
-    <!-- ══ 02 GRANDES EVENTOS ════════════════════════════════ -->
-    <section class="portfolio-category" id="shows" aria-labelledby="cat-shows">
-      <div class="container">
-        <div class="category-header">
-          <div class="category-title-block">
-            <span class="eyebrow">02 / 06</span>
-            <h2 class="category-title" id="cat-shows">Grandes Eventos</h2>
-            <p class="category-desc">Buffets, galas, recepções e grandes eventos com produção completa de alimentação,
-              ambientação e operação de serviço para instituições e corporações.</p>
-          </div>
-          <div class="carousel-controls" data-carousel="c-shows">
-            <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg></button>
-            <span class="carousel-counter"><span class="current">1</span> / <span class="total">13</span></span>
-            <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></button>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-track" id="c-shows" role="list">
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=19Xb56gModLCdwXBPmKbfQKoUf26N8S5j&sz=w700"
-                alt="Buffet Fundação ABRINQ" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet / Gala</span>
-                <h3 class="card-event-name">Fundação ABRINQ</h3>
-                <p class="card-event-desc">Buffet completo para evento institucional da Fundação ABRINQ — serviço de
-                  alto padrão para convidados especiais.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Fundação ABRINQ</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1jcKKxBMkzuqA5nO0NnAm4izfZWQRi0m2&sz=w700"
-                alt="Buffet Tribunal de Contas" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet Institucional</span>
-                <h3 class="card-event-name">Tribunal de Contas</h3>
-                <p class="card-event-desc">Produção de buffet para evento do Tribunal de Contas — protocolo, serviço e
-                  apresentação de alto nível.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Tribunal de Contas</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1vg4bE9hi9_v0Mi0wR_aGPowZAKQzxBW2&sz=w700"
-                alt="Buffet Tribunal de Contas 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Recepção</span>
-                <h3 class="card-event-name">Tribunal de Contas — Mesa Principal</h3>
-                <p class="card-event-desc">Mesa principal da recepção oficial com apresentação cuidadosa de cada detalhe
-                  do serviço.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Tribunal de Contas</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1yYrImcn0iTuqvhM2iT2vRhNWQQber6aC&sz=w700"
-                alt="Buffet Tribunal de Contas 3" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Gastronomia</span>
-                <h3 class="card-event-name">Tribunal de Contas — Banquete</h3>
-                <p class="card-event-desc">Montagem e apresentação de banquete para evento oficial com autoridades e
-                  convidados VIP.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Tribunal de Contas</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1lqCN6SbzIgVbKbM3RBhMkiTTbNp9LoQd&sz=w700"
-                alt="Buffet Proventus 1" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet</span>
-                <h3 class="card-event-name">Buffet Proventus — Recepção</h3>
-                <p class="card-event-desc">Produção completa de recepção com buffet para evento corporativo de grande
-                  porte.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1sSu9aCmnOikOURqjrXjCsIe_3Ofon_ch&sz=w700"
-                alt="Buffet Proventus 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet</span>
-                <h3 class="card-event-name">Buffet Proventus — Mesa Fria</h3>
-                <p class="card-event-desc">Mesa fria de alto padrão com apresentação cuidadosa e produtos selecionados.
-                </p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1f_rO_Q4D_ku5JaF80qja19OP3oHVbFGB&sz=w700"
-                alt="Buffet Proventus 3" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Gastronomia</span>
-                <h3 class="card-event-name">Buffet Proventus — Quentes</h3>
-                <p class="card-event-desc">Produção de pratos quentes e serviço completo para evento de grande porte.
-                </p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1Syk4AXXUaBm4s4w9eL9Aqa18auE8PHbB&sz=w700"
-                alt="Buffet Proventus 4" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet</span>
-                <h3 class="card-event-name">Buffet Proventus — Sobremesas</h3>
-                <p class="card-event-desc">Mesa de sobremesas e doces para recepção de alto padrão com apresentação
-                  elaborada.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1tqXP1lunP6vvdvD93F9KK_ymBZ99kE2c&sz=w700"
-                alt="Buffet Proventus 5" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Serviço</span>
-                <h3 class="card-event-name">Buffet Proventus — Serviço</h3>
-                <p class="card-event-desc">Equipe de serviço treinada para atendimento de qualidade em eventos
-                  institucionais.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1v6gaf1wSHdIG2wgWN00XTvEwXRQfNF9X&sz=w700"
-                alt="Buffet Proventus 7" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet</span>
-                <h3 class="card-event-name">Buffet Proventus — Cocktail</h3>
-                <p class="card-event-desc">Produção de cocktail com finger foods e bebidas para evento de networking
-                  corporativo.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1zMroSfxKOMGevQQUZdVrjkuRNfrPok-X&sz=w700"
-                alt="Buffet Proventus 8" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Gastronomia</span>
-                <h3 class="card-event-name">Buffet Proventus — Variedades</h3>
-                <p class="card-event-desc">Mesa completa com variedades gastronômicas para evento de grande porte com
-                  centenas de convidados.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1HqAhbrF_2V-krFeC5NW7uxBdoxOk4-50&sz=w700"
-                alt="Buffet Proventus 15" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Buffet VIP</span>
-                <h3 class="card-event-name">Buffet Proventus — Mesa VIP</h3>
-                <p class="card-event-desc">Mesa VIP com apresentação premium para autoridades e convidados especiais.
-                </p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1y-icDDIy12zh9f-w1GhS3m9LwEPQZhEV&sz=w700"
-                alt="Buffet Proventus 16" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Recepção</span>
-                <h3 class="card-event-name">Buffet Proventus — Recepção Final</h3>
-                <p class="card-event-desc">Encerramento de evento com recepção especial e buffet elaborado para os
-                  convidados.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-dots" data-dots="c-shows" role="tablist" aria-label="Paginação"></div>
-      </div>
-    </section>
-
-
-    <!-- ══ 03 EVENTOS CORPORATIVOS ══════════════════════════════════════════════ -->
-    <section class="portfolio-category" id="corporativos" aria-labelledby="cat-corp">
-      <div class="container">
-        <div class="category-header">
-          <div class="category-title-block">
-            <span class="eyebrow">03 / 06</span>
-            <h2 class="category-title" id="cat-corp">Eventos<br />Corporativos</h2>
-            <p class="category-desc">Inaugurações simultâneas, lançamentos de produto e eventos internos para as maiores
-              marcas do Brasil — Sam's Club, Big Bompreço, Hemobrás, Chandon, ABRINQ e mais.</p>
-          </div>
-          <div class="carousel-controls" data-carousel="c-corp">
-            <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg></button>
-            <span class="carousel-counter"><span class="current">1</span> / <span class="total">9</span></span>
-            <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></button>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-track" id="c-corp" role="list">
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1ViEGHYwBdEYVTHXhOew9omA_sJ-GfG2h&sz=w700"
-                alt="Inauguração Big Bompreço" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Inauguração</span>
-                <h3 class="card-event-name">Inauguração Big Bompreço</h3>
-                <p class="card-event-desc">Produção completa da inauguração de unidade do Big Bompreço — equipes,
-                  comunicação visual e operação no dia.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Big Bompreço</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1vSeL7w9nGi2nHawI_XIlnqug1Wadc_58&sz=w700"
-                alt="Inauguração Sam's" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Inauguração</span>
-                <h3 class="card-event-name">Inauguração Sam's</h3>
-                <p class="card-event-desc">Abertura de unidade Sam's Club com recepção de clientes VIP, equipe treinada
-                  e ambientação especial.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sam's Club</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1IQhcVYuxDnqjlnD7Yxmpg3fWxtU1Q0OF&sz=w700"
-                alt="Inauguração Sam's Club" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Inauguração</span>
-                <h3 class="card-event-name">Sam's Club — Área Interna</h3>
-                <p class="card-event-desc">Vista interna da inauguração do Sam's Club com toda a produção e equipe da
-                  Proventus presentes.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sam's Club</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1rHWnDGPMBSM1VGC0eUOJZDjnlf-4axLl&sz=w700"
-                alt="Inauguração Sam's Club 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Inauguração</span>
-                <h3 class="card-event-name">Sam's Club — Recepção</h3>
-                <p class="card-event-desc">Recepção oficial da inauguração com hostess e equipe de atendimento treinada
-                  pela Proventus.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sam's Club</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=13fNnJMxL8W9GBP80Z0r_LYuUA2LuGahQ&sz=w700"
-                alt="Inauguração Hemobrás" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Inauguração Institucional</span>
-                <h3 class="card-event-name">Inauguração Hemobrás</h3>
-                <p class="card-event-desc">Produção da inauguração da Hemobrás — empresa pública federal de
-                  hemoderivados.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>HEMOBRAS</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1EVIXAssAms51TImwzwH6z0PapeK7Nnrm&sz=w700"
-                alt="Chandon evento" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Lançamento Premium</span>
-                <h3 class="card-event-name">Chandon — Evento Exclusivo</h3>
-                <p class="card-event-desc">Produção de evento exclusivo para a Chandon com ambientação premium e serviço
-                  de alto padrão.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Chandon</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1K_aCKURY_8Sgwm7i_eUikLc7l9j1tvV5&sz=w700"
-                alt="São João Walmart" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ação Sazonal</span>
-                <h3 class="card-event-name">São João — Walmart</h3>
-                <p class="card-event-desc">Ação especial de São João para o Walmart — ambientação temática, promotores e
-                  decoração completa.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Walmart</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1A8XQ7AeF3ZPXfeNEHAyrEiqsI6BVaMhG&sz=w700"
-                alt="Fundação ABRINQ evento" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Evento Social</span>
-                <h3 class="card-event-name">Fundação ABRINQ — Gala</h3>
-                <p class="card-event-desc">Produção completa do evento de gala da Fundação ABRINQ com recepção VIP e
-                  buffet exclusivo.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Fundação ABRINQ</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1RVyxKAFwKa6I8_0QSNxtT6K7_hh7sZ4j&sz=w700"
-                alt="Evento corporativo Plataforma Feirix" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Apresentação</span>
-                <h3 class="card-event-name">Plataforma Feirix — Lançamento</h3>
-                <p class="card-event-desc">Evento corporativo de apresentação da Plataforma Feirix — produção
-                  audiovisual, palco e operação completa.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Feirix</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-dots" data-dots="c-corp" role="tablist" aria-label="Paginação"></div>
-      </div>
-    </section>
-
-
-    <!-- ══ 04 FEIRAS E EXPERIÊNCIAS DE MARCA ════════════════════════════════════ -->
-    <section class="portfolio-category" id="feiras" aria-labelledby="cat-feiras">
-      <div class="container">
-        <div class="category-header">
-          <div class="category-title-block">
-            <span class="eyebrow">04 / 06</span>
-            <h2 class="category-title" id="cat-feiras">Feiras &amp; Experiências<br />de Marca</h2>
-            <p class="category-desc">Stands, quiosques, ativações e experiências de marca para Heineken, Veuve Clicquot,
-              SENAC, FUNDARPE, Senado Federal e dezenas de outros clientes.</p>
-          </div>
-          <div class="carousel-controls" data-carousel="c-feiras">
-            <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg></button>
-            <span class="carousel-counter"><span class="current">1</span> / <span class="total">14</span></span>
-            <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></button>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-track" id="c-feiras" role="list">
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1TEEx8eQivm8Eq3S7969borxCOwp1GgPN&sz=w700"
-                alt="Heineken stand" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Premium</span>
-                <h3 class="card-event-name">Heineken — Stand</h3>
-                <p class="card-event-desc">Stand de alta visibilidade para a Heineken em evento de grande público —
-                  construção, ambientação e operação.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Heineken</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=15KILFykE-oDWkx-YutwdjCW1MlQFUTAD&sz=w700"
-                alt="Stand Pérgola" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand com Pérgola</span>
-                <h3 class="card-event-name">Stand Pérgola — Destaque</h3>
-                <p class="card-event-desc">Stand com estrutura de pérgola para evento ao ar livre — elegante, funcional
-                  e de alto impacto visual.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1Ni3Eo9-fPAHmB2Tof161YS35tAb9eY0M&sz=w700"
-                alt="Quiosque Santa Emília" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Quiosque</span>
-                <h3 class="card-event-name">Santa Emília — Quiosque PDV</h3>
-                <p class="card-event-desc">Quiosque no ponto de venda para a Santa Emília com design atrativo e
-                  promotores treinados.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Santa Emília</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1A21BIfYwCpG7Yz3ewPXVkyf7nsNNfBxl&sz=w700"
-                alt="Stand Senado Federal Bienal do Livro" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Bienal do Livro</span>
-                <h3 class="card-event-name">Senado Federal — Bienal do Livro</h3>
-                <p class="card-event-desc">Stand do Senado Federal na Bienal do Livro com livraria temática e área de
-                  convivência.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Senado Federal</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1k39q9w5XD9NiwXuIVp6RFnUook1jCwRJ&sz=w700"
-                alt="Stand Senac" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Educacional</span>
-                <h3 class="card-event-name">SENAC — Stand em Feira</h3>
-                <p class="card-event-desc">Stand do SENAC em feira educacional com área de demonstração e atendimento ao
-                  público.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>SENAC</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1C4jnuv84ekgkqU-Gw8dnAHCo145huNCV&sz=w700"
-                alt="Stand FUNDARPE" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Cultural</span>
-                <h3 class="card-event-name">FUNDARPE — Stand</h3>
-                <p class="card-event-desc">Stand da FUNDARPE (Fundação do Patrimônio Histórico e Artístico de
-                  Pernambuco) em feira cultural.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>FUNDARPE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1E1CObKQtk2u8poksD-XN5YluYqd04NPY&sz=w700"
-                alt="Stand TREND MEDICAL" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Médico</span>
-                <h3 class="card-event-name">TREND MEDICAL — Congresso</h3>
-                <p class="card-event-desc">Stand da TREND MEDICAL em congresso médico com área de demonstração de
-                  produtos e atendimento técnico.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Trend Medical</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1aJO5DR-ihx4R3r-Wg1vS-3CBUEl8O7rD&sz=w700"
-                alt="Stand Medic" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Médico</span>
-                <h3 class="card-event-name">Medic — Stand em Congresso</h3>
-                <p class="card-event-desc">Stand médico com design profissional e área de apresentação de equipamentos e
-                  soluções.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Medic</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1b8kKnaU-BXseEMpUQwGCq2bP4jPK1xLx&sz=w700"
-                alt="Stand Gale" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand</span>
-                <h3 class="card-event-name">Gale — Exposição</h3>
-                <p class="card-event-desc">Stand da Gale em exposição setorial com espaço de demonstração e atendimento
-                  especializado.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Gale</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=14g25JXis2qJusqQVooCcWcgm9p9vSlgF&sz=w700"
-                alt="Stand Grupo Tiger Autonor" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Automotivo</span>
-                <h3 class="card-event-name">Grupo Tiger / Autonor</h3>
-                <p class="card-event-desc">Stand automotivo para o Grupo Tiger (Autonor) com exposição de veículos e
-                  área de atendimento ao cliente.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Grupo Tiger / Autonor</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1KDDkqtodFMZxpkVykRoJEt7kwdTVl1p7&sz=w700"
-                alt="Stand MPLUB Distribuidora" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand Distribuidor</span>
-                <h3 class="card-event-name">MPLUB Distribuidora</h3>
-                <p class="card-event-desc">Stand completo para a MPLUB Distribuidora em feira setorial com área de
-                  catálogo e atendimento comercial.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>MPLUB</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1AlnPoSWirBPAjZK4Ve33-JipKZe4lCMk&sz=w700"
-                alt="Stand Alcala" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Stand</span>
-                <h3 class="card-event-name">Alcalá — Exposição</h3>
-                <p class="card-event-desc">Stand da Alcalá com design diferenciado e área de convivência para networking
-                  durante a feira.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Alcalá</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1E2v2UpC-JsYNTJQsmGhOdsWJM5fx2wyn&sz=w700"
-                alt="III Exposição em Gravatá" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Exposição Regional</span>
-                <h3 class="card-event-name">III Exposição — Gravatá</h3>
-                <p class="card-event-desc">Produção da terceira edição da exposição de Gravatá, PE — estrutura, stands e
-                  operação completa do evento.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Gravatá, PE</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1Aoc6oTZp-z16KFr5ILnZAF937cyg8pdl&sz=w700"
-                alt="Quiosque Veuve Clicquot" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Quiosque Luxo</span>
-                <h3 class="card-event-name">Veuve Clicquot — Quiosque</h3>
-                <p class="card-event-desc">Quiosque de luxo para a Veuve Clicquot — apresentação premium da marca com
-                  atendimento exclusivo.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Veuve Clicquot</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-dots" data-dots="c-feiras" role="tablist" aria-label="Paginação"></div>
-      </div>
-    </section>
-
-
-    <!-- ══ 05 CENOGRAFIA E AMBIENTAÇÃO ══════════════════════════════════════════ -->
-    <section class="portfolio-category" id="cenografia" aria-labelledby="cat-ceno">
-      <div class="container">
-        <div class="category-header">
-          <div class="category-title-block">
-            <span class="eyebrow">05 / 06</span>
-            <h2 class="category-title" id="cat-ceno">Cenografia &amp;<br />Ambientação</h2>
-            <p class="category-desc">Ambientações temáticas, ativações criativas e cenografias que transformam espaços —
-              Sky Vodka, SESI, Skol, Big Bompreço e muito mais.</p>
-          </div>
-          <div class="carousel-controls" data-carousel="c-ceno">
-            <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg></button>
-            <span class="carousel-counter"><span class="current">1</span> / <span class="total">5</span></span>
-            <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></button>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-track" id="c-ceno" role="list">
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1GnuGb6lolQCD64bREDxG5ijFkyqW-Rj-&sz=w700"
-                alt="Ação Promocional Sky Vodka" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ativação Premium</span>
-                <h3 class="card-event-name">Sky Vodka — Ativação</h3>
-                <p class="card-event-desc">Ambientação e ativação de marca para a Sky Vodka — espaço exclusivo com
-                  promotores e serviço premium.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sky Vodka</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1JMLMIwlV09_c_FkkU-o7EkA1NKwpVr_I&sz=w700"
-                alt="SESI Belo Jardim" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ambientação</span>
-                <h3 class="card-event-name">SESI — Belo Jardim</h3>
-                <p class="card-event-desc">Ambientação completa para evento do SESI em Belo Jardim, PE — espaço cultural
-                  e de lazer.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Belo Jardim, PE</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>SESI</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1SghsNImFH9umpKbGOGhJlKqiahWyLg0z&sz=w700"
-                alt="Cenografia evento" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Cenografia</span>
-                <h3 class="card-event-name">Cenografia — Espaço Temático</h3>
-                <p class="card-event-desc">Criação e execução de espaço temático com cenografia completa para evento
-                  corporativo.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1qx3q6zwOtBZ_NYqQLmStUBlmwf8_rym9&sz=w700"
-                alt="Cenografia evento 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ambientação</span>
-                <h3 class="card-event-name">Ambientação — Área de Exposição</h3>
-                <p class="card-event-desc">Ambientação especial para área de exposição com iluminação cênica e elementos
-                  cenográficos exclusivos.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Pernambuco</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=13IypeplkXreMpCuKPApL3C4aoXlydTqi&sz=w700"
-                alt="Ação Carrefour cerveja churrasco" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ativação PDV</span>
-                <h3 class="card-event-name">Carrefour — Cerveja &amp; Churrasco</h3>
-                <p class="card-event-desc">Ação especial de cerveja e churrasco no Carrefour — ambientação temática,
-                  promotores e degustação.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Carrefour</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-dots" data-dots="c-ceno" role="tablist" aria-label="Paginação"></div>
-      </div>
-    </section>
-
-
-    <!-- ══ 06 EQUIPES E OPERAÇÕES ════════════════════════════════════════════════ -->
-    <section class="portfolio-category" id="equipes" aria-labelledby="cat-equipes">
-      <div class="container">
-        <div class="category-header">
-          <div class="category-title-block">
-            <span class="eyebrow">06 / 06</span>
-            <h2 class="category-title" id="cat-equipes">Equipes &amp;<br />Operações</h2>
-            <p class="category-desc">Promotores, recepcionistas, hostess e supervisores treinados para inaugurações,
-              ações sazonais e operações de campo para Carrefour, Sam's Club, Big Bompreço e muito mais.</p>
-          </div>
-          <div class="carousel-controls" data-carousel="c-equipes">
-            <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-              </svg></button>
-            <span class="carousel-counter"><span class="current">1</span> / <span class="total">11</span></span>
-            <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></button>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-track" id="c-equipes" role="list">
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1YWVthG_Buy2U-6fcTSm2LyLmrGS3HeVv&sz=w700"
-                alt="Inauguração Big Bompreço equipe" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Equipe Inauguração</span>
-                <h3 class="card-event-name">Big Bompreço — Equipe</h3>
-                <p class="card-event-desc">Equipe completa posicionada para inauguração do Big Bompreço — promotores e
-                  recepcionistas uniformizados.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Big Bompreço</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1VFmRNDu8jWSFdSJ7ReeNWrYVo6skdbcL&sz=w700"
-                alt="Inauguração Big Bompreço equipe 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Operação</span>
-                <h3 class="card-event-name">Big Bompreço — Operação Interna</h3>
-                <p class="card-event-desc">Equipe operacional dentro da loja durante a inauguração — cada colaborador no
-                  posto certo.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Big Bompreço</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1tqRstzmM1ug6z339NX8xJuImjXYqq-2v&sz=w700"
-                alt="Inauguração Big Bompreço equipe 3" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Recepção</span>
-                <h3 class="card-event-name">Big Bompreço — Recepção</h3>
-                <p class="card-event-desc">Equipe de recepção na entrada da loja durante a inauguração — primeiros
-                  minutos perfeitos.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Big Bompreço</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1v3xcT4Wzk_spe1JnLsd8DR1zG5EzdNGK&sz=w700"
-                alt="Inauguração Big Bompreço equipe 4" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">PDV</span>
-                <h3 class="card-event-name">Big Bompreço — Promotores PDV</h3>
-                <p class="card-event-desc">Promotores posicionados no ponto de venda com material de apoio e treinamento
-                  específico da marca.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Big Bompreço</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1or1chSJbCq1zB1M3Zv4oHbaeabkAUAho&sz=w700"
-                alt="São João Big Bompreço equipe" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ação Sazonal</span>
-                <h3 class="card-event-name">São João — Big Bompreço</h3>
-                <p class="card-event-desc">Equipe temática de São João no Big Bompreço — uniformes, abordagem e ativação
-                  festiva completa.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Big Bompreço</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1RyQkytv1x5A82GwRPtcfRYqy9-bcZQa9&sz=w700"
-                alt="Equipe Sam's Club inauguração" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Equipe Inauguração</span>
-                <h3 class="card-event-name">Sam's Club — Equipe</h3>
-                <p class="card-event-desc">Equipe de abertura do Sam's Club — hostess, promotores e supervisores da
-                  Proventus presentes desde o primeiro minuto.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sam's Club</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1dCwmoHj7GY5dGEQSzQxcdk4rkRQeV16P&sz=w700"
-                alt="Inauguração Sam's Club equipe" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Supervisão</span>
-                <h3 class="card-event-name">Sam's Club — Supervisão</h3>
-                <p class="card-event-desc">Equipe de supervisão do Sam's Club — coordenação em tempo real de todos os
-                  pontos de atendimento.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sam's Club</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1HoIIa05tkvz5ei8HIvS9zm1etD3rH-Lf&sz=w700"
-                alt="Inauguração Sam's Club equipe 2" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Abertura</span>
-                <h3 class="card-event-name">Sam's Club — Abertura</h3>
-                <p class="card-event-desc">Momento de abertura oficial com equipe completa posicionada e operação
-                  rodando a pleno.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Sam's Club</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1Ntikp23X8DotehP6yRAfabDuUtnqlwCH&sz=w700"
-                alt="Spa Day Dia das Mães Carrefour" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ação Dia das Mães</span>
-                <h3 class="card-event-name">Carrefour — Spa Day</h3>
-                <p class="card-event-desc">Ação especial de Dia das Mães no Carrefour com spa day — recepcionistas,
-                  massagistas e mimo para clientes.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Carrefour</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1t8Q6RoBhweMq2j7MnORPf93DLCf3-F0P&sz=w700"
-                alt="Ação Dia do Cuscuz Carrefour" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Ação Promocional</span>
-                <h3 class="card-event-name">Carrefour — Dia do Cuscuz</h3>
-                <p class="card-event-desc">Ação especial do Dia do Cuscuz no Carrefour — promotores, degustação e
-                  ativação cultural nordestina.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Carrefour</span></div>
-              </div>
-            </div>
-
-            <div class="carousel-card square" role="listitem">
-              <img src="https://drive.google.com/thumbnail?id=1-APGfloWJV36teVbbfDcLdAJXzAXgV_8&sz=w700"
-                alt="Inauguração Carrefour Tacaruna Guararapes" loading="lazy" />
-              <div class="card-overlay"><span class="card-tag">Inauguração</span>
-                <h3 class="card-event-name">Carrefour — Tacaruna / Guararapes</h3>
-                <p class="card-event-desc">Inauguração do Carrefour Tacaruna / Guararapes — operação completa de
-                  abertura com equipe e comunicação visual.</p>
-                <div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>Recife, PE</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="2.5">
-                      <rect x="3" y="4" width="18" height="18" rx="2" />
-                      <line x1="16" y1="2" x2="16" y2="6" />
-                      <line x1="8" y1="2" x2="8" y2="6" />
-                      <line x1="3" y1="10" x2="21" y2="10" />
-                    </svg>Carrefour</span></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-dots" data-dots="c-equipes" role="tablist" aria-label="Paginação"></div>
-      </div>
-    </section>
-
-
-    <!-- CTA FINAL -->
-    <section class="portfolio-cta" aria-labelledby="cta-portfolio">
-      <div class="truss-grid" aria-hidden="true"></div>
-      <div class="container" style="position:relative;z-index:1;text-align:center">
-        <span class="eyebrow reveal" style="justify-content:center">Próximo Projeto</span>
-        <h2 id="cta-portfolio" class="h2 reveal reveal-delay-1" style="margin:20px auto 24px;max-width:700px">
-          SEU EVENTO PODE<br />ESTAR <span style="color:var(--red)">AQUI</span>
-        </h2>
-        <p class="lead reveal reveal-delay-2" style="text-align:center;margin:0 auto 44px">
-          Compartilhe o briefing e veja como a Proventus pode transformar sua ideia em realidade.
-        </p>
-        <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap" class="reveal reveal-delay-3">
-          <a href="contato.html" class="btn btn-primary">Solicitar Orçamento <svg class="btn-arrow" width="14"
-              height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></a>
-          <a href="https://wa.me/5581999835246?text=Olá%2C%20vi%20o%20portfólio%20e%20gostaria%20de%20um%20orçamento."
-            target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
-            </svg>
-            WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="img/LogoProventusBranca.png" alt="Proventus" width="140" /></a>
-          <p>Produção de eventos, inaugurações simultâneas e ações promocionais para as maiores marcas do Brasil desde
-            1999.</p>
-          <div class="footer-social">
-            <a href="https://instagram.com/proventuspromo" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.8" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-              </svg></a>
-            <a href="https://facebook.com/proventuspromo" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="1.8" aria-hidden="true">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-              </svg></a>
-            <a href="https://wa.me/5581999835246" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg
-                width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Portfólio</h4>
-          <ul>
-            <li><a href="portfolio.html#estruturas">Estruturas</a></li>
-            <li><a href="portfolio.html#shows">Shows e Festivais</a></li>
-            <li><a href="portfolio.html#corporativos">Corporativos</a></li>
-            <li><a href="portfolio.html#feiras">Feiras e Marcas</a></li>
-            <li><a href="portfolio.html#cenografia">Cenografia</a></li>
-            <li><a href="portfolio.html#equipes">Equipes</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contato</h4>
-          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1.18h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg><a href="tel:+5581999835246">(81) 9 9983-5246</a></div>
-          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg><a href="mailto:provpromocoes@gmail.com">provpromocoes@gmail.com</a></div>
-          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg><span>Recife, PE — Brasil</span></div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Proventus Promoções. Todos os direitos reservados.</p>
+      <div class="carousel-controls" data-carousel="c-estruturas">
+        <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <span class="carousel-counter"><span class="current">1</span> / <span class="total">14</span></span>
+        <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
-  </footer>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="c-estruturas" role="list">
 
-  <a href="https://wa.me/5581999835246?text=Olá%2C%20gostaria%20de%20um%20orçamento." class="whatsapp-float"
-    target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path
-        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
-    </svg>
-  </a>
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1dzkeJaw0aJjiogLmqa33LWNnR_jlcLIS&sz=w900" alt="Semiárido Show — estrutura" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Palco / Festival</span><h3 class="card-event-name">Semiárido Show</h3><p class="card-event-desc">Montagem de palco e infraestrutura completa do maior evento do semiárido brasileiro.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Petrolina, PE</span></div></div>
+        </div>
 
-  <script src="js/main.js"></script>
-  <script src="js/portfolio.js"></script>
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=15u6X54CkYiSCBAXdDWbIDMKRzBW5KoiA&sz=w900" alt="Semiárido Show 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Palco / Festival</span><h3 class="card-event-name">Semiárido Show — Vista Geral</h3><p class="card-event-desc">Vista panorâmica da estrutura e área do Semiárido Show com capacidade para milhares de pessoas.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Petrolina, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1F7IsM-PW9Sy94IlBOkLeuGr7Lz6GWAJ9&sz=w900" alt="Semiárido Show 3" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Estrutura Metálica</span><h3 class="card-event-name">Semiárido Show — Palco Principal</h3><p class="card-event-desc">Palco principal com estrutura metálica, iluminação e cobertura montados pela Proventus.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Petrolina, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1HaEohLqrFYi1hqa4ads7XYnrtenIT1Za&sz=w900" alt="Pedra Fundamental Vazia Garanhuns" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Cobertura</span><h3 class="card-event-name">Pedra Fundamental — Garanhuns</h3><p class="card-event-desc">Estrutura de cobertura montada antes do evento oficial de Pedra Fundamental em Garanhuns, PE.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Garanhuns, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1PQGRjk0inMuphjAphK-c0-P85d3hXshi&sz=w900" alt="Pedra Fundamental Garanhuns" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Evento Público</span><h3 class="card-event-name">Pedra Fundamental — Cerimônia</h3><p class="card-event-desc">Estrutura para cerimônia oficial com autoridades governamentais em Garanhuns.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Garanhuns, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1Fhq6yqty3Ic1BwpGX1R6cpfkIYUM9ha2&sz=w900" alt="Pedra Fundamental Cheia Garanhuns" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Grande Público</span><h3 class="card-event-name">Pedra Fundamental — Lotado</h3><p class="card-event-desc">Vista da estrutura com o público presente — evento oficial do Governo de Pernambuco.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Garanhuns, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1N3-rY85BJ5n_lW1u2Ed9Q3Ikh2ZfhvYx&sz=w900" alt="Pedra Fundamental Estrutura Garanhuns" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Estrutura Metálica</span><h3 class="card-event-name">Pedra Fundamental — Estrutura</h3><p class="card-event-desc">Detalhe da estrutura metálica de cobertura montada para o evento governamental.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Garanhuns, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=14JDyBB9LTazvmi0S7cdKP_3kjOg-x27E&sz=w900" alt="Hospital Provisório Secretaria da Saúde" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Estrutura Hospitalar</span><h3 class="card-event-name">Hospital Provisório — Sec. Saúde PE</h3><p class="card-event-desc">Montagem de estrutura hospitalar provisória para a Secretaria de Saúde de Pernambuco.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1IY7cX7MiRsNtqvFoDTmdVbGFE22Y4GhM&sz=w900" alt="Hospital Provisório Secretaria da Saúde 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Infraestrutura Pública</span><h3 class="card-event-name">Hospital Provisório — Vista Interna</h3><p class="card-event-desc">Vista interna da estrutura hospitalar provisória — projeto de alta responsabilidade e prazo crítico.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1uiGrOXFTCOmUXt9GSt0bRUImPqaFjE22&sz=w900" alt="Mercado Provisório Camaragibe" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Mercado Provisório</span><h3 class="card-event-name">Mercado Provisório — Camaragibe</h3><p class="card-event-desc">Estrutura de mercado provisório para a Prefeitura de Camaragibe, PE — solução rápida e funcional.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Camaragibe, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1Bsmb4aIrAcsskPB-6fMHfOidJ8CWan-F&sz=w900" alt="Porto do Itaqui" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Infraestrutura Portuária</span><h3 class="card-event-name">Porto do Itaqui</h3><p class="card-event-desc">Montagem de estrutura para evento no Porto do Itaqui, Maranhão — operação logística de alta complexidade.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Maranhão</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1G_i_knj9nlwHQgWJIVJ6s8uJqjXS6don&sz=w900" alt="EMBRAPA Semiárido" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Institucional</span><h3 class="card-event-name">EMBRAPA — Semiárido</h3><p class="card-event-desc">Estrutura e ambientação para evento da EMBRAPA no semiárido brasileiro.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Semiárido, NE</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1gMobUaFrXHXrWeR9fPdjW-02lwKJrb0r&sz=w900" alt="Container Bohemia" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Container / Ativação</span><h3 class="card-event-name">Container BOHEMIA</h3><p class="card-event-desc">Container customizado para ativação de marca da BOHEMIA — produção e montagem completas.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Bohemia</span></div></div>
+        </div>
+
+        <div class="carousel-card landscape" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1CF5UHApRGbBfNbtuUe9PFztGfAnBiTRr&sz=w900" alt="Livraria Senado Federal Bienal do Livro" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Bienal do Livro</span><h3 class="card-event-name">Livraria do Senado Federal</h3><p class="card-event-desc">Montagem da Livraria do Senado Federal na Bienal do Livro — estrutura e ambientação institucional.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Senado Federal</span></div></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" data-dots="c-estruturas" role="tablist" aria-label="Paginação"></div>
+  </div>
+</section>
+
+
+<!-- ══ 02 SHOWS, FESTIVAIS E GRANDES EVENTOS ════════════════════════════════ -->
+<section class="portfolio-category" id="shows" aria-labelledby="cat-shows">
+  <div class="container">
+    <div class="category-header">
+      <div class="category-title-block">
+        <span class="eyebrow">02 / 06</span>
+        <h2 class="category-title" id="cat-shows">Shows, Festivais<br/>&amp; Grandes Eventos</h2>
+        <p class="category-desc">Buffets, galas, recepções e grandes eventos com produção completa de alimentação, ambientação e operação de serviço para instituições e corporações.</p>
+      </div>
+      <div class="carousel-controls" data-carousel="c-shows">
+        <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <span class="carousel-counter"><span class="current">1</span> / <span class="total">13</span></span>
+        <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="c-shows" role="list">
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=19Xb56gModLCdwXBPmKbfQKoUf26N8S5j&sz=w700" alt="Buffet Fundação ABRINQ" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet / Gala</span><h3 class="card-event-name">Fundação ABRINQ</h3><p class="card-event-desc">Buffet completo para evento institucional da Fundação ABRINQ — serviço de alto padrão para convidados especiais.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Fundação ABRINQ</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1jcKKxBMkzuqA5nO0NnAm4izfZWQRi0m2&sz=w700" alt="Buffet Tribunal de Contas" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet Institucional</span><h3 class="card-event-name">Tribunal de Contas</h3><p class="card-event-desc">Produção de buffet para evento do Tribunal de Contas — protocolo, serviço e apresentação de alto nível.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Tribunal de Contas</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1vg4bE9hi9_v0Mi0wR_aGPowZAKQzxBW2&sz=w700" alt="Buffet Tribunal de Contas 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Recepção</span><h3 class="card-event-name">Tribunal de Contas — Mesa Principal</h3><p class="card-event-desc">Mesa principal da recepção oficial com apresentação cuidadosa de cada detalhe do serviço.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Tribunal de Contas</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1yYrImcn0iTuqvhM2iT2vRhNWQQber6aC&sz=w700" alt="Buffet Tribunal de Contas 3" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Gastronomia</span><h3 class="card-event-name">Tribunal de Contas — Banquete</h3><p class="card-event-desc">Montagem e apresentação de banquete para evento oficial com autoridades e convidados VIP.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Tribunal de Contas</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1lqCN6SbzIgVbKbM3RBhMkiTTbNp9LoQd&sz=w700" alt="Buffet Proventus 1" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet</span><h3 class="card-event-name">Buffet Proventus — Recepção</h3><p class="card-event-desc">Produção completa de recepção com buffet para evento corporativo de grande porte.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1sSu9aCmnOikOURqjrXjCsIe_3Ofon_ch&sz=w700" alt="Buffet Proventus 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet</span><h3 class="card-event-name">Buffet Proventus — Mesa Fria</h3><p class="card-event-desc">Mesa fria de alto padrão com apresentação cuidadosa e produtos selecionados.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1f_rO_Q4D_ku5JaF80qja19OP3oHVbFGB&sz=w700" alt="Buffet Proventus 3" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Gastronomia</span><h3 class="card-event-name">Buffet Proventus — Quentes</h3><p class="card-event-desc">Produção de pratos quentes e serviço completo para evento de grande porte.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1Syk4AXXUaBm4s4w9eL9Aqa18auE8PHbB&sz=w700" alt="Buffet Proventus 4" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet</span><h3 class="card-event-name">Buffet Proventus — Sobremesas</h3><p class="card-event-desc">Mesa de sobremesas e doces para recepção de alto padrão com apresentação elaborada.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1tqXP1lunP6vvdvD93F9KK_ymBZ99kE2c&sz=w700" alt="Buffet Proventus 5" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Serviço</span><h3 class="card-event-name">Buffet Proventus — Serviço</h3><p class="card-event-desc">Equipe de serviço treinada para atendimento de qualidade em eventos institucionais.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1v6gaf1wSHdIG2wgWN00XTvEwXRQfNF9X&sz=w700" alt="Buffet Proventus 7" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet</span><h3 class="card-event-name">Buffet Proventus — Cocktail</h3><p class="card-event-desc">Produção de cocktail com finger foods e bebidas para evento de networking corporativo.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1zMroSfxKOMGevQQUZdVrjkuRNfrPok-X&sz=w700" alt="Buffet Proventus 8" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Gastronomia</span><h3 class="card-event-name">Buffet Proventus — Variedades</h3><p class="card-event-desc">Mesa completa com variedades gastronômicas para evento de grande porte com centenas de convidados.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1HqAhbrF_2V-krFeC5NW7uxBdoxOk4-50&sz=w700" alt="Buffet Proventus 15" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Buffet VIP</span><h3 class="card-event-name">Buffet Proventus — Mesa VIP</h3><p class="card-event-desc">Mesa VIP com apresentação premium para autoridades e convidados especiais.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1y-icDDIy12zh9f-w1GhS3m9LwEPQZhEV&sz=w700" alt="Buffet Proventus 16" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Recepção</span><h3 class="card-event-name">Buffet Proventus — Recepção Final</h3><p class="card-event-desc">Encerramento de evento com recepção especial e buffet elaborado para os convidados.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" data-dots="c-shows" role="tablist" aria-label="Paginação"></div>
+  </div>
+</section>
+
+
+<!-- ══ 03 EVENTOS CORPORATIVOS ══════════════════════════════════════════════ -->
+<section class="portfolio-category" id="corporativos" aria-labelledby="cat-corp">
+  <div class="container">
+    <div class="category-header">
+      <div class="category-title-block">
+        <span class="eyebrow">03 / 06</span>
+        <h2 class="category-title" id="cat-corp">Eventos<br/>Corporativos</h2>
+        <p class="category-desc">Inaugurações simultâneas, lançamentos de produto e eventos internos para as maiores marcas do Brasil — Sam's Club, Big Bompreço, Hemobrás, Chandon, ABRINQ e mais.</p>
+      </div>
+      <div class="carousel-controls" data-carousel="c-corp">
+        <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <span class="carousel-counter"><span class="current">1</span> / <span class="total">9</span></span>
+        <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="c-corp" role="list">
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1ViEGHYwBdEYVTHXhOew9omA_sJ-GfG2h&sz=w700" alt="Inauguração Big Bompreço" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Inauguração</span><h3 class="card-event-name">Inauguração Big Bompreço</h3><p class="card-event-desc">Produção completa da inauguração de unidade do Big Bompreço — equipes, comunicação visual e operação no dia.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Big Bompreço</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1vSeL7w9nGi2nHawI_XIlnqug1Wadc_58&sz=w700" alt="Inauguração Sam's" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Inauguração</span><h3 class="card-event-name">Inauguração Sam's</h3><p class="card-event-desc">Abertura de unidade Sam's Club com recepção de clientes VIP, equipe treinada e ambientação especial.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sam's Club</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1IQhcVYuxDnqjlnD7Yxmpg3fWxtU1Q0OF&sz=w700" alt="Inauguração Sam's Club" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Inauguração</span><h3 class="card-event-name">Sam's Club — Área Interna</h3><p class="card-event-desc">Vista interna da inauguração do Sam's Club com toda a produção e equipe da Proventus presentes.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sam's Club</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1rHWnDGPMBSM1VGC0eUOJZDjnlf-4axLl&sz=w700" alt="Inauguração Sam's Club 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Inauguração</span><h3 class="card-event-name">Sam's Club — Recepção</h3><p class="card-event-desc">Recepção oficial da inauguração com hostess e equipe de atendimento treinada pela Proventus.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sam's Club</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=13fNnJMxL8W9GBP80Z0r_LYuUA2LuGahQ&sz=w700" alt="Inauguração Hemobrás" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Inauguração Institucional</span><h3 class="card-event-name">Inauguração Hemobrás</h3><p class="card-event-desc">Produção da inauguração da Hemobrás — empresa pública federal de hemoderivados.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>HEMOBRAS</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1EVIXAssAms51TImwzwH6z0PapeK7Nnrm&sz=w700" alt="Chandon evento" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Lançamento Premium</span><h3 class="card-event-name">Chandon — Evento Exclusivo</h3><p class="card-event-desc">Produção de evento exclusivo para a Chandon com ambientação premium e serviço de alto padrão.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Chandon</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1K_aCKURY_8Sgwm7i_eUikLc7l9j1tvV5&sz=w700" alt="São João Walmart" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ação Sazonal</span><h3 class="card-event-name">São João — Walmart</h3><p class="card-event-desc">Ação especial de São João para o Walmart — ambientação temática, promotores e decoração completa.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Walmart</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1A8XQ7AeF3ZPXfeNEHAyrEiqsI6BVaMhG&sz=w700" alt="Fundação ABRINQ evento" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Evento Social</span><h3 class="card-event-name">Fundação ABRINQ — Gala</h3><p class="card-event-desc">Produção completa do evento de gala da Fundação ABRINQ com recepção VIP e buffet exclusivo.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Fundação ABRINQ</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1RVyxKAFwKa6I8_0QSNxtT6K7_hh7sZ4j&sz=w700" alt="Evento corporativo Plataforma Feirix" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Apresentação</span><h3 class="card-event-name">Plataforma Feirix — Lançamento</h3><p class="card-event-desc">Evento corporativo de apresentação da Plataforma Feirix — produção audiovisual, palco e operação completa.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Feirix</span></div></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" data-dots="c-corp" role="tablist" aria-label="Paginação"></div>
+  </div>
+</section>
+
+
+<!-- ══ 04 FEIRAS E EXPERIÊNCIAS DE MARCA ════════════════════════════════════ -->
+<section class="portfolio-category" id="feiras" aria-labelledby="cat-feiras">
+  <div class="container">
+    <div class="category-header">
+      <div class="category-title-block">
+        <span class="eyebrow">04 / 06</span>
+        <h2 class="category-title" id="cat-feiras">Feiras &amp; Experiências<br/>de Marca</h2>
+        <p class="category-desc">Stands, quiosques, ativações e experiências de marca para Heineken, Veuve Clicquot, SENAC, FUNDARPE, Senado Federal e dezenas de outros clientes.</p>
+      </div>
+      <div class="carousel-controls" data-carousel="c-feiras">
+        <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <span class="carousel-counter"><span class="current">1</span> / <span class="total">14</span></span>
+        <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="c-feiras" role="list">
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1TEEx8eQivm8Eq3S7969borxCOwp1GgPN&sz=w700" alt="Heineken stand" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Premium</span><h3 class="card-event-name">Heineken — Stand</h3><p class="card-event-desc">Stand de alta visibilidade para a Heineken em evento de grande público — construção, ambientação e operação.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Heineken</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1Aoc6oTZp-z16KFr5ILnZAF937cyg8pdl&sz=w700" alt="Quiosque Veuve Clicquot" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Quiosque Luxo</span><h3 class="card-event-name">Veuve Clicquot — Quiosque</h3><p class="card-event-desc">Quiosque de luxo para a Veuve Clicquot — apresentação premium da marca com atendimento exclusivo.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Veuve Clicquot</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1Ni3Eo9-fPAHmB2Tof161YS35tAb9eY0M&sz=w700" alt="Quiosque Santa Emília" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Quiosque</span><h3 class="card-event-name">Santa Emília — Quiosque PDV</h3><p class="card-event-desc">Quiosque no ponto de venda para a Santa Emília com design atrativo e promotores treinados.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Santa Emília</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1A21BIfYwCpG7Yz3ewPXVkyf7nsNNfBxl&sz=w700" alt="Stand Senado Federal Bienal do Livro" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Bienal do Livro</span><h3 class="card-event-name">Senado Federal — Bienal do Livro</h3><p class="card-event-desc">Stand do Senado Federal na Bienal do Livro com livraria temática e área de convivência.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Senado Federal</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1k39q9w5XD9NiwXuIVp6RFnUook1jCwRJ&sz=w700" alt="Stand Senac" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Educacional</span><h3 class="card-event-name">SENAC — Stand em Feira</h3><p class="card-event-desc">Stand do SENAC em feira educacional com área de demonstração e atendimento ao público.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>SENAC</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1C4jnuv84ekgkqU-Gw8dnAHCo145huNCV&sz=w700" alt="Stand FUNDARPE" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Cultural</span><h3 class="card-event-name">FUNDARPE — Stand</h3><p class="card-event-desc">Stand da FUNDARPE (Fundação do Patrimônio Histórico e Artístico de Pernambuco) em feira cultural.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>FUNDARPE</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1E1CObKQtk2u8poksD-XN5YluYqd04NPY&sz=w700" alt="Stand TREND MEDICAL" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Médico</span><h3 class="card-event-name">TREND MEDICAL — Congresso</h3><p class="card-event-desc">Stand da TREND MEDICAL em congresso médico com área de demonstração de produtos e atendimento técnico.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Trend Medical</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1aJO5DR-ihx4R3r-Wg1vS-3CBUEl8O7rD&sz=w700" alt="Stand Medic" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Médico</span><h3 class="card-event-name">Medic — Stand em Congresso</h3><p class="card-event-desc">Stand médico com design profissional e área de apresentação de equipamentos e soluções.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Medic</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1b8kKnaU-BXseEMpUQwGCq2bP4jPK1xLx&sz=w700" alt="Stand Gale" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand</span><h3 class="card-event-name">Gale — Exposição</h3><p class="card-event-desc">Stand da Gale em exposição setorial com espaço de demonstração e atendimento especializado.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Gale</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=14g25JXis2qJusqQVooCcWcgm9p9vSlgF&sz=w700" alt="Stand Grupo Tiger Autonor" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Automotivo</span><h3 class="card-event-name">Grupo Tiger / Autonor</h3><p class="card-event-desc">Stand automotivo para o Grupo Tiger (Autonor) com exposição de veículos e área de atendimento ao cliente.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Grupo Tiger / Autonor</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1KDDkqtodFMZxpkVykRoJEt7kwdTVl1p7&sz=w700" alt="Stand MPLUB Distribuidora" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand Distribuidor</span><h3 class="card-event-name">MPLUB Distribuidora</h3><p class="card-event-desc">Stand completo para a MPLUB Distribuidora em feira setorial com área de catálogo e atendimento comercial.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>MPLUB</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1AlnPoSWirBPAjZK4Ve33-JipKZe4lCMk&sz=w700" alt="Stand Alcala" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand</span><h3 class="card-event-name">Alcalá — Exposição</h3><p class="card-event-desc">Stand da Alcalá com design diferenciado e área de convivência para networking durante a feira.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Alcalá</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1E2v2UpC-JsYNTJQsmGhOdsWJM5fx2wyn&sz=w700" alt="III Exposição em Gravatá" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Exposição Regional</span><h3 class="card-event-name">III Exposição — Gravatá</h3><p class="card-event-desc">Produção da terceira edição da exposição de Gravatá, PE — estrutura, stands e operação completa do evento.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Gravatá, PE</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=15KILFykE-oDWkx-YutwdjCW1MlQFUTAD&sz=w700" alt="Stand Pérgola" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Stand com Pérgola</span><h3 class="card-event-name">Stand Pérgola — Destaque</h3><p class="card-event-desc">Stand com estrutura de pérgola para evento ao ar livre — elegante, funcional e de alto impacto visual.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" data-dots="c-feiras" role="tablist" aria-label="Paginação"></div>
+  </div>
+</section>
+
+
+<!-- ══ 05 CENOGRAFIA E AMBIENTAÇÃO ══════════════════════════════════════════ -->
+<section class="portfolio-category" id="cenografia" aria-labelledby="cat-ceno">
+  <div class="container">
+    <div class="category-header">
+      <div class="category-title-block">
+        <span class="eyebrow">05 / 06</span>
+        <h2 class="category-title" id="cat-ceno">Cenografia &amp;<br/>Ambientação</h2>
+        <p class="category-desc">Ambientações temáticas, ativações criativas e cenografias que transformam espaços — Sky Vodka, SESI, Skol, Big Bompreço e muito mais.</p>
+      </div>
+      <div class="carousel-controls" data-carousel="c-ceno">
+        <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <span class="carousel-counter"><span class="current">1</span> / <span class="total">5</span></span>
+        <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="c-ceno" role="list">
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1GnuGb6lolQCD64bREDxG5ijFkyqW-Rj-&sz=w700" alt="Ação Promocional Sky Vodka" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ativação Premium</span><h3 class="card-event-name">Sky Vodka — Ativação</h3><p class="card-event-desc">Ambientação e ativação de marca para a Sky Vodka — espaço exclusivo com promotores e serviço premium.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sky Vodka</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1JMLMIwlV09_c_FkkU-o7EkA1NKwpVr_I&sz=w700" alt="SESI Belo Jardim" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ambientação</span><h3 class="card-event-name">SESI — Belo Jardim</h3><p class="card-event-desc">Ambientação completa para evento do SESI em Belo Jardim, PE — espaço cultural e de lazer.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Belo Jardim, PE</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>SESI</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1SghsNImFH9umpKbGOGhJlKqiahWyLg0z&sz=w700" alt="Cenografia evento" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Cenografia</span><h3 class="card-event-name">Cenografia — Espaço Temático</h3><p class="card-event-desc">Criação e execução de espaço temático com cenografia completa para evento corporativo.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1qx3q6zwOtBZ_NYqQLmStUBlmwf8_rym9&sz=w700" alt="Cenografia evento 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ambientação</span><h3 class="card-event-name">Ambientação — Área de Exposição</h3><p class="card-event-desc">Ambientação especial para área de exposição com iluminação cênica e elementos cenográficos exclusivos.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Pernambuco</span></div></div>
+        </div>
+
+        <div class="carousel-card" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=13IypeplkXreMpCuKPApL3C4aoXlydTqi&sz=w700" alt="Ação Carrefour cerveja churrasco" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ativação PDV</span><h3 class="card-event-name">Carrefour — Cerveja &amp; Churrasco</h3><p class="card-event-desc">Ação especial de cerveja e churrasco no Carrefour — ambientação temática, promotores e degustação.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Carrefour</span></div></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" data-dots="c-ceno" role="tablist" aria-label="Paginação"></div>
+  </div>
+</section>
+
+
+<!-- ══ 06 EQUIPES E OPERAÇÕES ════════════════════════════════════════════════ -->
+<section class="portfolio-category" id="equipes" aria-labelledby="cat-equipes">
+  <div class="container">
+    <div class="category-header">
+      <div class="category-title-block">
+        <span class="eyebrow">06 / 06</span>
+        <h2 class="category-title" id="cat-equipes">Equipes &amp;<br/>Operações</h2>
+        <p class="category-desc">Promotores, recepcionistas, hostess e supervisores treinados para inaugurações, ações sazonais e operações de campo para Carrefour, Sam's Club, Big Bompreço e muito mais.</p>
+      </div>
+      <div class="carousel-controls" data-carousel="c-equipes">
+        <button class="carousel-btn btn-prev" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <span class="carousel-counter"><span class="current">1</span> / <span class="total">11</span></span>
+        <button class="carousel-btn btn-next" aria-label="Próximo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="c-equipes" role="list">
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1YWVthG_Buy2U-6fcTSm2LyLmrGS3HeVv&sz=w700" alt="Inauguração Big Bompreço equipe" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Equipe Inauguração</span><h3 class="card-event-name">Big Bompreço — Equipe</h3><p class="card-event-desc">Equipe completa posicionada para inauguração do Big Bompreço — promotores e recepcionistas uniformizados.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Big Bompreço</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1VFmRNDu8jWSFdSJ7ReeNWrYVo6skdbcL&sz=w700" alt="Inauguração Big Bompreço equipe 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Operação</span><h3 class="card-event-name">Big Bompreço — Operação Interna</h3><p class="card-event-desc">Equipe operacional dentro da loja durante a inauguração — cada colaborador no posto certo.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Big Bompreço</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1tqRstzmM1ug6z339NX8xJuImjXYqq-2v&sz=w700" alt="Inauguração Big Bompreço equipe 3" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Recepção</span><h3 class="card-event-name">Big Bompreço — Recepção</h3><p class="card-event-desc">Equipe de recepção na entrada da loja durante a inauguração — primeiros minutos perfeitos.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Big Bompreço</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1v3xcT4Wzk_spe1JnLsd8DR1zG5EzdNGK&sz=w700" alt="Inauguração Big Bompreço equipe 4" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">PDV</span><h3 class="card-event-name">Big Bompreço — Promotores PDV</h3><p class="card-event-desc">Promotores posicionados no ponto de venda com material de apoio e treinamento específico da marca.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Big Bompreço</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1or1chSJbCq1zB1M3Zv4oHbaeabkAUAho&sz=w700" alt="São João Big Bompreço equipe" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ação Sazonal</span><h3 class="card-event-name">São João — Big Bompreço</h3><p class="card-event-desc">Equipe temática de São João no Big Bompreço — uniformes, abordagem e ativação festiva completa.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Big Bompreço</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1RyQkytv1x5A82GwRPtcfRYqy9-bcZQa9&sz=w700" alt="Equipe Sam's Club inauguração" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Equipe Inauguração</span><h3 class="card-event-name">Sam's Club — Equipe</h3><p class="card-event-desc">Equipe de abertura do Sam's Club — hostess, promotores e supervisores da Proventus presentes desde o primeiro minuto.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sam's Club</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1dCwmoHj7GY5dGEQSzQxcdk4rkRQeV16P&sz=w700" alt="Inauguração Sam's Club equipe" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Supervisão</span><h3 class="card-event-name">Sam's Club — Supervisão</h3><p class="card-event-desc">Equipe de supervisão do Sam's Club — coordenação em tempo real de todos os pontos de atendimento.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sam's Club</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1HoIIa05tkvz5ei8HIvS9zm1etD3rH-Lf&sz=w700" alt="Inauguração Sam's Club equipe 2" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Abertura</span><h3 class="card-event-name">Sam's Club — Abertura</h3><p class="card-event-desc">Momento de abertura oficial com equipe completa posicionada e operação rodando a pleno.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Sam's Club</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1Ntikp23X8DotehP6yRAfabDuUtnqlwCH&sz=w700" alt="Spa Day Dia das Mães Carrefour" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ação Dia das Mães</span><h3 class="card-event-name">Carrefour — Spa Day</h3><p class="card-event-desc">Ação especial de Dia das Mães no Carrefour com spa day — recepcionistas, massagistas e mimo para clientes.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Carrefour</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1t8Q6RoBhweMq2j7MnORPf93DLCf3-F0P&sz=w700" alt="Ação Dia do Cuscuz Carrefour" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Ação Promocional</span><h3 class="card-event-name">Carrefour — Dia do Cuscuz</h3><p class="card-event-desc">Ação especial do Dia do Cuscuz no Carrefour — promotores, degustação e ativação cultural nordestina.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Carrefour</span></div></div>
+        </div>
+
+        <div class="carousel-card square" role="listitem">
+          <img src="https://drive.google.com/thumbnail?id=1-APGfloWJV36teVbbfDcLdAJXzAXgV_8&sz=w700" alt="Inauguração Carrefour Tacaruna Guararapes" loading="lazy"/>
+          <div class="card-overlay"><span class="card-tag">Inauguração</span><h3 class="card-event-name">Carrefour — Tacaruna / Guararapes</h3><p class="card-event-desc">Inauguração do Carrefour Tacaruna / Guararapes — operação completa de abertura com equipe e comunicação visual.</p><div class="card-event-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Recife, PE</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Carrefour</span></div></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" data-dots="c-equipes" role="tablist" aria-label="Paginação"></div>
+  </div>
+</section>
+
+
+<!-- CTA FINAL -->
+<section class="portfolio-cta" aria-labelledby="cta-portfolio">
+  <div class="truss-grid" aria-hidden="true"></div>
+  <div class="container" style="position:relative;z-index:1;text-align:center">
+    <span class="eyebrow reveal" style="justify-content:center">Próximo Projeto</span>
+    <h2 id="cta-portfolio" class="h2 reveal reveal-delay-1" style="margin:20px auto 24px;max-width:700px">
+      SEU EVENTO PODE<br/>ESTAR <span style="color:var(--red)">AQUI</span>
+    </h2>
+    <p class="lead reveal reveal-delay-2" style="text-align:center;margin:0 auto 44px">
+      Compartilhe o briefing e veja como a Proventus pode transformar sua ideia em realidade.
+    </p>
+    <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap" class="reveal reveal-delay-3">
+      <a href="contato.html" class="btn btn-primary">Solicitar Orçamento <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="https://wa.me/5581999835246?text=Olá%2C%20vi%20o%20portfólio%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container"><div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo"><img src="img/LogoProventusBranca.png" alt="Proventus" width="140"/></a>
+      <p>Produção de eventos, inaugurações simultâneas e ações promocionais para as maiores marcas do Brasil desde 1999.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/proventuspromo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://facebook.com/proventuspromo" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://wa.me/5581999835246" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Navegação</h4><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="portfolio.html">Portfólio</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+    <div class="footer-col"><h4>Portfólio</h4><ul><li><a href="portfolio.html#estruturas">Estruturas</a></li><li><a href="portfolio.html#shows">Shows e Festivais</a></li><li><a href="portfolio.html#corporativos">Corporativos</a></li><li><a href="portfolio.html#feiras">Feiras e Marcas</a></li><li><a href="portfolio.html#cenografia">Cenografia</a></li><li><a href="portfolio.html#equipes">Equipes</a></li></ul></div>
+    <div class="footer-col"><h4>Contato</h4>
+      <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1.18h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+5581999835246">(81) 9 9983-5246</a></div>
+      <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:provpromocoes@gmail.com">provpromocoes@gmail.com</a></div>
+      <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Recife, PE — Brasil</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Proventus Promoções. Todos os direitos reservados.</p></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5581999835246?text=Olá%2C%20gostaria%20de%20um%20orçamento." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script src="js/portfolio.js"></script>
 </body>
-
 </html>

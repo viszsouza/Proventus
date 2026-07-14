@@ -668,3 +668,153 @@
 .page-hero-sm {
   padding: 168px 0 70px;
 }
+
+/* ==========================================================================
+   FORMULÁRIO — estados de validação, loading e status
+   ========================================================================== */
+
+/* Campo com erro */
+.form-field input[style*="rgb(224, 40, 44)"],
+.form-field select[style*="rgb(224, 40, 44)"],
+.form-field textarea[style*="rgb(224, 40, 44)"] {
+  border-color: var(--red) !important;
+}
+
+/* Campo válido */
+.form-field input[style*="3dbd6a"],
+.form-field select[style*="3dbd6a"],
+.form-field textarea[style*="3dbd6a"] {
+  border-color: #3dbd6a !important;
+}
+
+/* Mensagem de erro inline por campo */
+.field-error {
+  display: block;
+  font-size: 12px;
+  color: var(--red);
+  margin-top: 5px;
+  font-family: var(--font-body);
+}
+
+/* Status de envio */
+.form-status {
+  font-size: 14px;
+  min-height: 20px;
+  margin-top: 16px;
+  padding: 0;
+  border-radius: 0;
+  transition: all 0.3s var(--ease);
+  line-height: 1.5;
+}
+
+.form-status.loading {
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-status.loading::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--line);
+  border-top-color: var(--red);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.form-status.success {
+  color: #3dbd6a;
+  background: rgba(61, 189, 106, 0.08);
+  border: 1px solid rgba(61, 189, 106, 0.25);
+  padding: 14px 18px;
+  font-weight: 500;
+}
+
+.form-status.error {
+  color: var(--red);
+  background: rgba(224, 40, 44, 0.07);
+  border: 1px solid rgba(224, 40, 44, 0.22);
+  padding: 14px 18px;
+}
+
+/* Botão disabled durante envio */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Input date — corrigir cor no dark mode */
+input[type="date"] {
+  color-scheme: dark;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+  cursor: pointer;
+}
+
+/* Input number — remover setas nativas */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] { -moz-appearance: textfield; }
+
+/* select — corrigir aparência no dark */
+.form-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238f8b85' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 28px;
+  cursor: pointer;
+}
+
+.form-field select:focus {
+  border-color: var(--red);
+  outline: none;
+}
+
+/* optgroup */
+.form-field select optgroup {
+  color: var(--gray);
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--black-card);
+}
+
+.form-field select option {
+  background: var(--black-card);
+  color: var(--white);
+  font-size: 14.5px;
+  padding: 8px 0;
+}
+
+/* Textarea com resize apenas vertical */
+.form-field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* Nota de ajuda abaixo dos campos */
+.form-field > span[style*="gray"] {
+  font-size: 11.5px;
+  color: var(--gray-dim);
+  margin-top: 6px;
+  display: block;
+  line-height: 1.4;
+}
