@@ -288,85 +288,285 @@
   flex-direction: column;
 }
 
-.service-row {
+/* ---------- GRID DE CARDS DE SERVIÇOS ---------- */
+.services-grid {
   display: grid;
-  grid-template-columns: 90px 1.4fr 1.6fr 140px;
-  gap: 32px;
-  align-items: center;
-  padding: 32px 0;
-  border-top: 1px solid var(--line-soft);
-  transition: background 0.25s var(--ease), padding-left 0.25s var(--ease);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
-.services-list .service-row:last-child {
-  border-bottom: 1px solid var(--line-soft);
+@media (max-width: 1000px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 22px; } }
+@media (max-width: 620px) { .services-grid { grid-template-columns: 1fr; gap: 18px; } }
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--black-deep);
+  border: 1px solid var(--line-soft);
+  padding: 38px 34px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  transition: border-color 0.35s var(--ease), transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
 
-.service-row:hover {
-  background: var(--black-card);
-  padding-left: 16px;
+.service-card:hover {
+  border-color: var(--line);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 48px -20px rgba(0,0,0,0.55);
 }
 
-@media (max-width: 900px) {
-  .service-row {
-    grid-template-columns: 50px 1fr;
-    row-gap: 12px;
-  }
-  .service-row .service-row-desc {
-    grid-column: 2;
-  }
-  .service-row .service-row-link {
-    grid-column: 2;
-    justify-self: start;
-  }
-}
-
-.service-row-num {
+.service-card-num-bg {
+  position: absolute;
+  top: -2px;
+  right: 18px;
   font-family: var(--font-display);
-  font-size: 15px;
-  color: var(--gray-dim);
-}
-
-.service-row-name {
-  font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 76px;
   font-weight: 700;
-  text-transform: uppercase;
-  transition: color 0.25s var(--ease);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--line);
+  z-index: 0;
+  user-select: none;
+  transition: -webkit-text-stroke-color 0.35s var(--ease);
 }
 
-.service-row:hover .service-row-name {
+.service-card:hover .service-card-num-bg {
+  -webkit-text-stroke-color: var(--red-dim);
+}
+
+.service-card-top {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 26px;
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  background: var(--black-deep);
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.service-icon svg { stroke-width: 1.6; }
+
+.service-card:hover .service-icon {
+  border-color: var(--red);
+  background: var(--red-glow);
+  transform: scale(1.06);
+}
+
+.service-card-name {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  transition: color 0.3s var(--ease);
+}
+
+.service-card:hover .service-card-name {
   color: var(--red);
 }
 
-.service-row-desc {
+.service-card-desc {
+  position: relative;
+  z-index: 1;
   color: var(--gray);
-  font-size: 14.5px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
+  flex-grow: 1;
 }
 
-.service-row-link {
-  display: flex;
+.service-card-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-soft);
+  width: 100%;
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white-soft);
+  transition: color 0.3s var(--ease);
+}
+
+.service-card:hover .service-card-link {
+  color: var(--red);
+  border-top-color: var(--line);
+}
+
+.service-card-link svg {
+  transition: transform 0.3s var(--ease);
+}
+.service-card:hover .service-card-link svg {
+  transform: translateX(5px);
+}
+
+/* Cards com foto real — mesma largura dos demais, mosaico dentro do grid */
+.service-card.has-photo {
+  border-color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card.has-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.88) 100%);
+  z-index: 0;
+  transition: background 0.35s var(--ease);
+}
+
+.service-card.has-photo:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.service-card.has-photo:hover::before {
+  background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.42) 45%, rgba(10,10,10,0.78) 100%);
+}
+
+.service-card.has-photo .service-card-desc {
+  color: var(--white-soft);
+  opacity: 0.88;
+}
+
+.service-card.has-photo .service-card-link {
+  border-top-color: rgba(255,255,255,0.18);
+}
+.service-card.has-photo:hover .service-card-link {
+  border-top-color: rgba(255,255,255,0.32);
+}
+
+.service-card.has-photo .service-icon {
+  border-color: rgba(255,255,255,0.35);
+  background: rgba(10,10,10,0.4);
+}
+
+.service-card.has-photo .service-card-num-bg {
+  -webkit-text-stroke-color: rgba(255,255,255,0.28);
+}
+.service-card.has-photo:hover .service-card-num-bg {
+  -webkit-text-stroke-color: rgba(224,40,44,0.55);
+}
+
+/* Card final — CTA embutido no grid, preenche a última linha por completo */
+.service-cta-card {
+  grid-column: span 2;
+  background: var(--black-card);
+  border: 1px solid var(--line-soft);
+  border-left: 2px solid var(--red);
+  padding: 38px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-cta-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--line-soft);
+  border-left-color: var(--red);
+}
+
+.service-cta-card h3 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.service-cta-card .btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 620px) {
+  .service-card { min-height: unset; padding: 30px 26px; }
+  .service-card:hover { transform: none; }
+  .service-icon { width: 40px; height: 40px; }
+  .service-icon svg { width: 18px; height: 18px; }
+  .service-card-num-bg { font-size: 58px; }
+  .service-cta-card { grid-column: 1 / -1; padding: 30px 26px; }
+}
+
+/* Logos de clientes citados dentro de cada serviço */
+.service-clients {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.service-clients .sc-label {
+  font-family: var(--font-display);
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-soft);
-  justify-self: end;
+  color: var(--gray-dim);
+  margin-right: 2px;
 }
 
-.service-row:hover .service-row-link {
-  color: var(--red);
+.service-card.has-photo .service-clients .sc-label {
+  color: var(--gray);
 }
 
-.service-row-link svg {
-  transition: transform 0.25s var(--ease);
+.client-logo-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  padding: 0 4px;
 }
-.service-row:hover .service-row-link svg {
-  transform: translateX(4px);
+
+.client-logo-mini img {
+  max-height: 22px;
+  max-width: 84px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.55;
+  transition: opacity 0.25s var(--ease);
+}
+
+.service-card:hover .client-logo-mini img {
+  opacity: 0.9;
+}
+
+.client-logo-mini span {
+  display: none;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gray-dim);
+  border: 1px solid var(--line);
+  padding: 3px 8px;
 }
 
 /* Sub-CTA dentro de serviços */
@@ -668,6 +868,62 @@
 .page-hero-sm {
   padding: 168px 0 70px;
 }
+
+/* Destaques com ícone no hero — dão peso visual ao texto de abertura */
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 48px;
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.hl-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hl-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+
+.hl-item:hover .hl-icon {
+  border-color: var(--red);
+  background: var(--red-glow);
+}
+
+.hl-text strong {
+  font-family: var(--font-display);
+  font-size: 27px;
+  font-weight: 800;
+  color: var(--white);
+  display: block;
+  line-height: 1.1;
+}
+
+.hl-text span {
+  font-size: 12.5px;
+  color: var(--gray);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 700px) {
+  .hero-highlights { gap: 18px 32px; margin-top: 36px; padding-top: 28px; }
+  .hl-icon { width: 40px; height: 40px; }
+  .hl-icon svg { width: 18px; height: 18px; }
+  .hl-text strong { font-size: 22px; }
+}
+
 
 /* ==========================================================================
    FORMULÁRIO — estados de validação, loading e status
