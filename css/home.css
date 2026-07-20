@@ -177,23 +177,11 @@
   to { transform: translateX(-50%); }
 }
 
-.client-strip .marquee-item {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.04em;
-  color: var(--gray-dim);
-  text-transform: uppercase;
-  white-space: nowrap;
+.client-strip .marquee-item img {
+  width: 100px;
   display: flex;
   align-items: center;
   gap: 64px;
-}
-
-.client-strip .marquee-item::after {
-  content: "•";
-  color: var(--line);
-  margin-left: 64px;
 }
 
 /* SOBRE TEASER */
