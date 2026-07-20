@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initActiveNavLink();
   initVideoTabs();
   initHeroVideoPlay();
+  initDailyQuote();
 });
 
 /* ---- Menu mobile ---- */
@@ -158,6 +159,30 @@ function initVideoTabs() {
       const target = document.getElementById(tab.dataset.target);
       if (target) target.hidden = false;
     });
+  });
+}
+
+/* ---- Frase do dia (página de contato) ---- */
+function initDailyQuote() {
+  const el = document.querySelector("#daily-quote-text");
+  if (!el) return;
+
+  // Índice 0 = Domingo ... 6 = Sábado (Date.prototype.getDay)
+  const frases = [
+    "Todo evento é uma promessa. A nossa é entregar sem desculpas.", // Domingo
+    "Segunda-feira é o dia certo para tirar seu projeto do papel.",  // Segunda
+    "Estrutura não é detalhe — é a base que sustenta a experiência.", // Terça
+    "Cada palco montado carrega 27 anos de execução sem improviso.", // Quarta
+    "Grandes marcas não terceirizam o essencial. Elas escolhem quem entrega.", // Quinta
+    "Faltam poucos dias para o seu evento? Nós já resolvemos casos assim.", // Sexta
+    "Enquanto uns planejam o fim de semana, nós já estamos montando o próximo evento.", // Sábado
+  ];
+
+  const hoje = new Date().getDay();
+  el.textContent = frases[hoje];
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => el.classList.add("is-visible"));
   });
 }
 

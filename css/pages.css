@@ -29,6 +29,40 @@
   letter-spacing: 0.02em;
 }
 
+/* ---- Frase do dia (página de contato) ---- */
+.daily-quote {
+  margin-top: 40px;
+  padding: 22px 24px;
+  background: var(--black-card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--red);
+}
+
+.daily-quote .eyebrow {
+  gap: 8px;
+}
+
+.daily-quote .eyebrow::before {
+  width: 18px;
+}
+
+.daily-quote-text {
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--white-soft);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+
+.daily-quote-text.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about-history {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;

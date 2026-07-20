@@ -8,7 +8,7 @@ direto do navegador. Plano gratuito: até **200 envios/mês**.
 ## 1. Criar conta
 
 Acesse https://www.emailjs.com e clique em **Sign Up**.
-Use o mesmo e-mail da Proventus: `provpromocoes@gmail.com`
+Use o mesmo e-mail da Proventus: `contato@proventuspromocoes.com.br`
 
 ---
 
@@ -16,7 +16,7 @@ Use o mesmo e-mail da Proventus: `provpromocoes@gmail.com`
 
 1. No painel, vá em **Email Services → Add New Service**
 2. Escolha **Gmail**
-3. Clique em **Connect Account** e autorize com `provpromocoes@gmail.com`
+3. Clique em **Connect Account** e autorize com `contato@proventuspromocoes.com.br`
 4. Em **Service Name** coloque: `Proventus`
 5. Clique em **Create Service**
 6. Copie o **Service ID** gerado (ex: `service_abc123`)
@@ -142,7 +142,7 @@ Use o mesmo e-mail da Proventus: `provpromocoes@gmail.com`
 
   <div style="background:#141414;padding:18px 32px;text-align:center">
     <p style="color:#666;font-size:12px;margin:0">
-      Proventus Promoções · provpromocoes@gmail.com · (81) 9 9983-5246
+      Proventus Promoções · contato@proventuspromocoes.com.br · (81) 9 9983-5246
     </p>
   </div>
 
@@ -186,7 +186,7 @@ Salve o arquivo e faça o upload para o servidor.
 
 1. Acesse a página de contato no navegador
 2. Preencha o formulário e clique em **Enviar Solicitação**
-3. Verifique a caixa de entrada de `provpromocoes@gmail.com`
+3. Verifique a caixa de entrada de `contato@proventuspromocoes.com.br`
 
 Se o e-mail chegar: ✅ tudo configurado.
 Se não chegar: verifique o painel do EmailJS → **Activity** para ver logs de erro.
