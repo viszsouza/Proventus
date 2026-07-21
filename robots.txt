@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.proventuspromocoes.com.br/sitemap.xml
